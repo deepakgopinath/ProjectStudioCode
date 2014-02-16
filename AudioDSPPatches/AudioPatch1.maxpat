@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 72.0, 44.0, 1053.0, 541.0 ],
+		"rect" : [ 72.0, 44.0, 1053.0, 710.0 ],
 		"bgcolor" : [ 0.997699, 1.0, 0.895393, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -29,6 +29,32 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-98",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 439.393982, 1225.0, 40.0, 20.0 ],
+					"text" : "s end"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 355.733795, 1225.0, 43.0, 20.0 ],
+					"text" : "s start"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -333,7 +359,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 325.068878, 863.333313, 176.060593, 41.51516 ],
+					"patching_rect" : [ 341.652893, 863.333313, 176.060593, 41.51516 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 441.783569, 237.999252, 176.060593, 41.51516 ],
 					"size" : 1.0
@@ -1913,7 +1939,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-45",
-					"items" : [ "11.WAV", ",", "19.WAV", ",", "27.wav", ",", "3.WAV", ",", "35.WAV", ",", "43.WAV", ",", "51.WAV", ",", "59.WAV" ],
+					"items" : [ "11.WAV", ",", "19.WAV", ",", "27.wav", ",", "3.WAV", ",", "35.WAV", ",", "43.WAV", ",", "51.WAV", ",", "59.WAV", ",", "Lawrence Krauss - You Are All Stardust.mp3" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3384,6 +3410,24 @@
 					"hidden" : 0,
 					"midpoints" : [ 593.522095, 832.880249, 247.844254, 832.880249 ],
 					"source" : [ "obj-70", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-71", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-98", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-71", 3 ]
 				}
 
 			}
