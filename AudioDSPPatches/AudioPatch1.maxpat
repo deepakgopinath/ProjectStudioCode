@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 72.0, 44.0, 901.0, 601.0 ],
+		"rect" : [ 97.0, 44.0, 859.0, 522.0 ],
 		"bgcolor" : [ 0.997699, 1.0, 0.895393, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -29,6 +29,97 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-179",
+					"linecount" : 4,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 48.333332, 1448.333252, 50.0, 58.0 ],
+					"text" : "0.867742 0.877742"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-177",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 40.0, 1386.666626, 49.0, 20.0 ],
+					"text" : "pack f f"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-167",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 105.0, 1320.0, 44.0, 20.0 ],
+					"text" : "+ 0.01"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Black",
+					"fontsize" : 16.0,
+					"frgb" : 0.0,
+					"id" : "obj-160",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 163.538345, 332.214935, 208.0, 52.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 182.385468, 111.93412, 113.0, 29.0 ],
+					"text" : "Scrubber\n"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-157",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "float", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 20.640244, 1308.333252, 50.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 0.827074, 0.706461, 1.0 ],
+					"contdata" : 1,
+					"id" : "obj-130",
+					"maxclass" : "multislider",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"orientation" : 0,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 20.640244, 1203.333374, 181.026413, 73.333336 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 72.443512, 155.1008, 312.473846, 35.000004 ],
+					"setminmax" : [ 0.0, 1.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -909,7 +1000,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 934.121399, 501.79892, 246.0, 345.0 ],
+					"patching_rect" : [ 865.416626, 486.666656, 246.0, 345.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 7,
 					"presentation_rect" : [ 934.121399, 470.79892, 585.0, 204.0 ],
@@ -1061,7 +1152,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 148.538345, 317.214935, 208.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 144.052139, 65.548279, 113.0, 29.0 ],
+					"presentation_rect" : [ 242.385468, 24.214945, 113.0, 29.0 ],
 					"text" : "Speech"
 				}
 
@@ -1080,7 +1171,7 @@
 					"patching_rect" : [ 125.524811, 921.333313, 100.0, 20.0 ],
 					"prefix" : "MacHD:/Users/deepak/Desktop/GeorgiaTech/Semester2Acads/JasonTechEnsemble/ProjectStudioCode/AudioDSPPatches/SpeechSamples/",
 					"presentation" : 1,
-					"presentation_rect" : [ 144.052139, 111.93412, 100.0, 20.0 ]
+					"presentation_rect" : [ 242.385468, 70.600784, 100.0, 20.0 ]
 				}
 
 			}
@@ -1232,8 +1323,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 111.666664, 1096.666626, 85.0, 18.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 270.0, 108.111595, 85.0, 18.0 ],
 					"text" : "apply gain 1.2"
 				}
 
@@ -1536,6 +1625,8 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"fgcolor" : [ 0.65098, 0.65098, 0.65098, 0.05 ],
 					"floatoutput" : 1,
 					"id" : "obj-131",
 					"maxclass" : "rslider",
@@ -1545,7 +1636,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 341.652893, 1113.333374, 176.060593, 41.51516 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 72.443512, 309.608978, 312.473846, 41.51516 ],
+					"presentation_rect" : [ 72.443512, 200.97673, 312.473846, 143.889816 ],
 					"size" : 1.0
 				}
 
@@ -1657,7 +1748,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 84.095993, 544.654419, 208.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 25.205009, 65.548279, 113.0, 29.0 ],
+					"presentation_rect" : [ 123.538345, 24.214945, 113.0, 29.0 ],
 					"text" : "NonSpeech "
 				}
 
@@ -2445,7 +2536,7 @@
 					"patching_rect" : [ 1192.18457, 590.869141, 256.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 433.136414, 439.079956, 256.0, 128.0 ],
-					"setfilter" : [ 0, 3, 1, 0, 0, 192.75618, 0.859228, 0.925789, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+					"setfilter" : [ 0, 3, 1, 0, 0, 85.63279, 0.936989, 1.090055, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 				}
 
 			}
@@ -2899,7 +2990,7 @@
 					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
 					"patching_rect" : [ 238.344254, 1296.989624, 312.473846, 143.889816 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 72.443512, 154.110855, 312.473846, 143.889816 ]
+					"presentation_rect" : [ 72.443512, 200.97673, 312.473846, 143.889816 ]
 				}
 
 			}
@@ -3137,7 +3228,7 @@
 					"patching_rect" : [ 325.068878, 911.157104, 174.380173, 20.0 ],
 					"prefix" : "MacHD:/Users/deepak/Desktop/GeorgiaTech/Semester2Acads/JasonTechEnsemble/ProjectStudioCode/AudioDSPPatches/NonSpeechSamples/",
 					"presentation" : 1,
-					"presentation_rect" : [ 25.205009, 108.111595, 90.586777, 20.0 ]
+					"presentation_rect" : [ 123.538345, 66.778259, 90.586777, 20.0 ]
 				}
 
 			}
@@ -3805,6 +3896,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-157", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-130", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-133", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4024,6 +4124,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-167", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-157", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-177", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-157", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-168", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4078,6 +4196,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-177", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-167", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-159", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4119,6 +4246,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-131", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-177", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-179", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-177", 0 ]
 				}
 
 			}
