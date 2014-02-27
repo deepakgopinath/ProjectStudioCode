@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 97.0, 44.0, 859.0, 522.0 ],
+		"rect" : [ 97.0, 44.0, 998.0, 710.0 ],
 		"bgcolor" : [ 0.997699, 1.0, 0.895393, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -32,6 +32,36 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-162",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1498.873047, 1149.511597, 49.0, 18.0 ],
+					"text" : "clearall"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-132",
+					"maxclass" : "preset",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "preset", "int", "preset", "int" ],
+					"patching_rect" : [ 1349.820801, 1191.420166, 313.333313, 241.666656 ],
+					"preset_data" : [ 						{
+							"number" : 1,
+							"data" : [ 5, "obj-15", "slider", "float", 87.0, 5, "obj-25", "slider", "float", 65.0, 5, "obj-24", "slider", "float", 38.0, 5, "obj-23", "slider", "float", 0.0, 5, "obj-1", "live.gain~", "float", 0.0, 5, "obj-45", "umenu", "int", 0, 5, "obj-54", "number", "int", 4, 5, "obj-80", "flonum", "float", 77142.96875, 5, "obj-79", "dial", "float", 29.0, 5, "obj-19", "flonum", "float", -1.0, 5, "obj-67", "toggle", "int", 1, 5, "obj-74", "toggle", "int", 1, 5, "obj-92", "slider", "float", 0.490671, 5, "obj-95", "flonum", "float", 0.490671, 5, "obj-16", "toggle", "int", 0, 5, "obj-17", "filtergraph~", "nfilters", 1, 9, "obj-17", "filtergraph~", "setoptions", 0, 3, 1, 0, 0, 8, "obj-17", "filtergraph~", "params", 0, 4749.05127, 1.776594, 1.090055, 5, "obj-32", "slider", "float", 0.532993, 5, "obj-60", "flonum", "float", 0.467007, 5, "obj-69", "flonum", "float", 0.532993, 5, "obj-103", "flonum", "float", 0.0, 5, "obj-105", "flonum", "float", 0.0, 5, "obj-107", "flonum", "float", 0.0, 6, "obj-131", "rslider", "list", 0.0, 0.01, 5, "obj-133", "flonum", "float", 0.0, 5, "obj-134", "flonum", "float", 0.01, 5, "obj-136", "flonum", "float", 0.0, 5, "obj-137", "flonum", "float", 0.0, 5, "obj-141", "flonum", "float", 0.0, 5, "obj-142", "flonum", "float", 250.841492, 5, "obj-102", "flonum", "float", 4749.05127, 5, "obj-154", "umenu", "int", 2, 5, "obj-161", "flonum", "float", 0.0, 5, "obj-130", "multislider", "list", 0.0, 5, "obj-157", "flonum", "float", 0.0 ]
+						}
+ ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-179",
 					"linecount" : 4,
 					"maxclass" : "message",
@@ -39,7 +69,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 48.333332, 1448.333252, 50.0, 58.0 ],
-					"text" : "0.867742 0.877742"
+					"text" : "0.509677 0.519677"
 				}
 
 			}
@@ -80,7 +110,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 163.538345, 332.214935, 208.0, 52.0 ],
+					"patching_rect" : [ 163.538345, 332.214935, 208.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 182.385468, 111.93412, 113.0, 29.0 ],
 					"text" : "Scrubber\n"
@@ -1162,7 +1192,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-154",
-					"items" : [ "charliechaplin.mp3", ",", "gandhi_interview.mp3", ",", "Hitler2.mp3", ",", "Martin Luther King  Street Sweeper  Speech.mp3" ],
+					"items" : [ "charliechaplin.mp3", ",", "gandhi_interview.mp3", ",", "Hitler2.mp3", ",", "Lawrence Krauss - You Are All Stardust.mp3", ",", "Martin Luther King  Street Sweeper  Speech.mp3" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1517,7 +1547,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 696.969604, 1272.727173, 50.0, 20.0 ]
+					"patching_rect" : [ 696.969604, 1272.727173, 105.09642, 20.0 ]
 				}
 
 			}
@@ -1531,7 +1561,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 621.212036, 1272.727173, 50.0, 20.0 ]
+					"patching_rect" : [ 621.212036, 1272.727173, 63.774105, 20.0 ]
 				}
 
 			}
@@ -2536,7 +2566,7 @@
 					"patching_rect" : [ 1192.18457, 590.869141, 256.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 433.136414, 439.079956, 256.0, 128.0 ],
-					"setfilter" : [ 0, 3, 1, 0, 0, 85.63279, 0.936989, 1.090055, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+					"setfilter" : [ 0, 3, 1, 0, 0, 817.927673, 1.232677, 0.895407, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 				}
 
 			}
@@ -3042,8 +3072,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 144.628113, 1011.239746, 74.793388, 18.0 ],
-					"text" : "0"
+					"patching_rect" : [ 144.628113, 1011.239746, 74.793388, 18.0 ]
 				}
 
 			}
@@ -4173,6 +4202,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-161", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-132", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-162", 0 ]
 				}
 
 			}
