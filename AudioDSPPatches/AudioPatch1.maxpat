@@ -655,7 +655,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 301.054199, 115.814575, 48.052589, 50.0 ],
 									"size" : 3,
-									"value" : 2
+									"value" : 1
 								}
 
 							}
