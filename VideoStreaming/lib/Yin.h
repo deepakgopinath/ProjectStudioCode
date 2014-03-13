@@ -14,6 +14,7 @@ class Yin{
 
 		float getPitch(float* buffer);
 		float getProbability();
+		float getMedian(float* pitchCandidates, int length);
 
 	private: 
 		float parabolicInterpolation(int tauEstimate);

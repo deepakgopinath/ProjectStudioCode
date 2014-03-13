@@ -3,6 +3,8 @@
  * Ying-Shu Kuo
  * */
 #include <cstdlib>
+#include <algorithm> //sort
+#include <cmath>     //ceil
 #include "Yin.h"
 void Yin::initialize(float yinSampleRate ,int yinBufferSize){
 	bufferSize = yinBufferSize;
@@ -27,6 +29,13 @@ Yin::~Yin(){
 
 Yin::Yin(float yinSampleRate,int yinBufferSize){
 	initialize(yinSampleRate,yinBufferSize);
+}
+
+float getMedian(float* pitchCandidates, int length){
+	int idx1 = ceil((float)length / 2);
+	int idx2 = ceil(((float)length + 1.f) / 2);
+	std::sort(&pitchCandidates[0], &pitchCandidates[length]);
+	return (pitchCandidates[idx1] + pitchCandidates[idx2]) / 2;
 }
 
 float Yin::getProbability(){
