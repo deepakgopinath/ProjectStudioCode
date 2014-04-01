@@ -7,6 +7,7 @@
 #include "objectModel.hpp"
 #include "circularBuffer.hpp"
 #include "particleSystem.hpp"
+#include "ofxOsc.h"
 class testApp : public ofBaseApp{
 
 	public:
@@ -39,19 +40,21 @@ class testApp : public ofBaseApp{
 		SpriteClips lennonSequence;
 		SpriteClips leeSequence;
 		SpriteClips pictureSequence;
+
+
+
 		MySprite* hitler;
 		MySprite* lennon;
 		MySprite* lee;
-		bool hitlerShown;
-		bool leeShown;
-		bool lennonShown;
-		bool doShader;
-		bool picWall;
-		bool star;
-		ofShader shader;
+		CircularWave waveDrawer;
+
 		
 		Particle<float> particles[2000];
 		Spring<float>* springs[2000];
 
 		CircularBuffer<float>** buffer;
+		
+		ofxOscSender oscSender;
+		ofxOscReceiver oscReceiver;
+
 };
