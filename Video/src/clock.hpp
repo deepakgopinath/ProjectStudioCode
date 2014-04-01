@@ -58,6 +58,10 @@ class Clock{
 		void setScale(float scale){
 			this->scale=scale;
 		}
+		
+		float getScale(){
+			return this->scale;
+		}
 		unsigned long getVisualTime() const{
 			return visualTime;
 		}

@@ -3,13 +3,15 @@
 #include "ofMain.h"
 #include "clock.hpp"
 #include "particleSystem.hpp"
+#include "objectModel.hpp"
 
 class ParticleSystemTestApp: public ofBaseApp{
 public:
+	Title title;
 	Particle<float> p1;
 	Particle<float> p2;
 	Spring<float> spring; 
-	ParticleSystemTestApp():spring(&p1, &p2, 0.8, 2,100){
+	ParticleSystemTestApp():spring(&p1, &p2, 0.2, 4,100){
 
 	}
 	void setup(){
@@ -24,7 +26,7 @@ public:
 		ofSetBackgroundAuto(false);
 		engineClock.start();
 		engineClock.setScale(1);
-		
+		title.show();
 	}
 	void update(){
 		p1.position= VecType<float>(mouseX,mouseY);
@@ -34,10 +36,7 @@ public:
 	}
 	void draw(){
 		ofBackground(255);
-		ofSetColor(0,0,0,30);
-		ofCircle(p2.position.x,p2.position.y,5);
-		ofCircle(p1.position.x, p1.position.y,5);
-		ofLine(p1.position.x,p1.position.y, p2.position.x, p2.position.y);
+		title.draw();
 	}
 	Clock engineClock;
 };
