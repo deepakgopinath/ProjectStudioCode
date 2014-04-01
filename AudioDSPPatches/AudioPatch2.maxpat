@@ -714,7 +714,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 301.054199, 115.814575, 48.052589, 50.0 ],
 									"size" : 3,
-									"value" : 2
+									"value" : 1
 								}
 
 							}
@@ -1807,7 +1807,7 @@
 					"patching_rect" : [ 1028.564331, 528.271851, 256.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 437.869385, 250.660629, 256.0, 128.0 ],
-					"setfilter" : [ 0, 3, 1, 0, 0, 2313.514648, 2.520421, 1.746549, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+					"setfilter" : [ 0, 3, 1, 0, 0, 288.337799, 5.584151, 1.746549, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 				}
 
 			}
@@ -3192,7 +3192,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 46.082573, 837.471497, 62.0, 31.0 ],
-					"text" : "0.764516 0.774516"
+					"text" : "0.274194 0.284194"
 				}
 
 			}
@@ -3623,7 +3623,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 38.389496, 85.510818, 640.0, 18.0 ],
-					"text" : "MacHD:/Users/deepak/Dropbox/Public/FinalAudioCollection/Speech/"
+					"text" : "MacHD:/Users/deepak/Dropbox/Public/FinalAudioCollection/NonSpeech/"
 				}
 
 			}
@@ -3659,14 +3659,14 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-1",
-					"items" : [ "AnandPiano.mp3", ",", "CharlieChaplin.mp3", ",", "Hitler.mp3", ",", "LawrenceKrauss.mp3", ",", "MLK.mp3", ",", "VietnamWarAmbush.mp3", ",", "WhoTaught.mp3" ],
+					"items" : [ "AirHockeyClickSounds.mp3", ",", "Bomb-Explosion-Sound-Effect.mp3", ",", "Hand-Granade-Sound-Effect.mp3", ",", "Machine-Gun-1-Sound-Effect.mp3", ",", "MetalSheet.mp3", ",", "ProtestSounds.mp3" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 82.389488, 308.010834, 100.0, 20.0 ],
-					"prefix" : "MacHD:/Users/deepak/Dropbox/Public/FinalAudioCollection/Speech/",
+					"prefix" : "MacHD:/Users/deepak/Dropbox/Public/FinalAudioCollection/NonSpeech/",
 					"presentation" : 1,
 					"presentation_rect" : [ 131.020462, 134.0, 100.0, 20.0 ]
 				}
@@ -4964,10 +4964,10 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-78" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-82" : [ "live.gain~[3]", "live.gain~", 0 ],
+			"obj-81" : [ "live.gain~[2]", "live.gain~", 0 ],
 			"obj-80" : [ "live.gain~[1]", "live.gain~", 0 ],
-			"obj-81" : [ "live.gain~[2]", "live.gain~", 0 ]
+			"obj-82" : [ "live.gain~[3]", "live.gain~", 0 ],
+			"obj-78" : [ "live.gain~", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [  ]
