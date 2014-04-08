@@ -1,0 +1,12 @@
+Handle multiple voices (x4?)
+Parameters only relate to the current voice (that is chosen from a popup).
+Start & End offsets as %
+Voice mode:
+	- Record & loop single voice
+	- Once through voices 1-4
+	- Continuous cycle
+Sample stop mode - "off"
+Sample fade out mode - "fade to off"
+Change amplitude to min/max
+Use duration parameters
+When in loop mode, take grain length into account
