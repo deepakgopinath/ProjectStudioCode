@@ -1,0 +1,78 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf350
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11040\viewh11720\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f0\b\fs24 \cf0 au~ external for Max/MSP 5\
+Beta 1 (released 12 May 2009)\
+
+\b0 \
+
+\b Description
+\b0 \
+This is a beta version of an external which allows you to incorporate AudioUnits into your Max/MSP patch.\
+\
+
+\b Limitations
+\b0 \
+\'95 This external runs only on Max 5\
+\'95 It currently only accepts a stereo feed.\
+\
+
+\b Installing\
+
+\b0 Copy the file 
+\b au~.mxo
+\b0  to /Applications/Max5/Cycling '74/msp-externals/\
+Copy the file 
+\b au~.maxhelp
+\b0  to /Applications/Max5/Cycling '74/msp-help/\
+\
+
+\b Arguments
+\b0 \
+This external takes one argument: the name of the Audio Unit. NB: this must be spelled 
+\i exactly
+\i0  as defined in the Audio Unit. To get a list of these names, send the message "plugins" to the first inlet of the object, which will send a list of all Audio Units to the Max Window. You can then copy and paste the name of the Audio Unit you desire as your first argument. (
+\b NB If the name of the AU has a space in it, you will need to enclose it in quote marks
+\b0 ).\
+\
+
+\b Messages
+\b0 \
+The external has two inlets: a stereo audio feed. The left inlet also accepts the following messages:\
+	
+\b bypass 0 / bypass 1
+\b0 : turn processing on / off\
+	
+\b params
+\b0  : sends a series of parameter names out the 4th outlet\
+	
+\b paramdump
+\b0  : send a list of parameter values, scaled to between 0 & 1, out the 3rd outlet. The main use of this is to control a multislider object.\
+	
+\b plugins
+\b0  : sends a series of plugin names out the 6th outlet.\
+	
+\b plugins menu 
+\b0 : sends a umenu-formatted set of messages out the 6th outlet to populate a menu\
+	
+\b numparams 
+\b0 : sends an integer out the 4th outlet giving the number of parameters in this effect\
+	
+\b plug "AU"
+\b0  : where AU is the name of an Audio Unit. This will change the current Audio Unit.\
+	
+\b 2 45 
+\b0 : two numbers, where the first is an integer, changes the value of the parameter, in this case changing parameter number 2 to the value 45. Note that parameters start at parameter number 0\
+	
+\b 0.1 0.2 0.95 0.0 0.75
+\b0  : a list of floating-point numbers will programatically set the parameters of the AU (scaled to the appropriate parameter value range). The primary use of this is to allow the plug-in to be controlled by a mutlislider object.\
+\
+You can also double-click on the object to open the AudioUnit's editing window.\
+\
+
+\b Further information
+\b0 \
+For more information, suggestions, bugs, etc, email me at michael.norris@xtra.co.nz}
