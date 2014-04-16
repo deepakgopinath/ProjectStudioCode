@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 14.0, 49.0, 821.0, 589.0 ],
+		"rect" : [ 14.0, 49.0, 1082.0, 624.0 ],
 		"bgcolor" : [ 1.0, 0.645424, 0.46127, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -29,6 +29,84 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial Black",
+					"fontsize" : 16.0,
+					"frgb" : 0.0,
+					"id" : "obj-205",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 843.123962, 670.366516, 208.0, 29.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 843.123962, 672.366516, 229.212112, 29.0 ],
+					"text" : "CONDUCTOR CUES "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-221",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1454.699951, 42.142876, 91.0, 20.0 ],
+					"text" : "loadmess clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Black",
+					"fontsize" : 20.0,
+					"frgb" : 0.0,
+					"id" : "obj-223",
+					"linecount" : 2,
+					"maxclass" : "textedit",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1317.557129, 112.142876, 403.0, 225.714294 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 423.869385, 658.0, 403.0, 225.714294 ],
+					"text" : "\"ANNIE-FADE IN WITH MLK SAMPLE\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-203",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1336.836182, 33.571465, 74.0, 20.0 ],
+					"text" : "prepend set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-204",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1336.836182, -19.285715, 99.0, 20.0 ],
+					"text" : "udpreceive 4321"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -8160,6 +8238,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-223", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-203", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-203", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-204", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-147", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -8263,6 +8359,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-220", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-223", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-221", 0 ]
 				}
 
 			}
@@ -9204,11 +9309,11 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-142" : [ "live.gain~[4]", "live.gain~[4]", 0 ],
-			"obj-80" : [ "live.gain~[1]", "live.gain~", 0 ],
-			"obj-81" : [ "live.gain~[2]", "live.gain~", 0 ],
 			"obj-82" : [ "live.gain~[3]", "live.gain~", 0 ],
-			"obj-78" : [ "live.gain~", "live.gain~", 0 ]
+			"obj-142" : [ "live.gain~[4]", "live.gain~[4]", 0 ],
+			"obj-78" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-80" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-81" : [ "live.gain~[2]", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
